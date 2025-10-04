@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Погода</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Фоновое видео -->
+    <div class="video-background">
+      <video id="cloud-video" autoplay muted loop playsinline>
+        <source src="./clouds.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+      </video>
+    </div>
+    
+    <section class="weather__app">
+      <h1 class="title">IPhone 13 & 14</h1>
+
+      <div class="container">
+        <div class="weather__location">
+          <img
+            src="./img/location icon.png"
+            alt=""
+            class="weather__location-img"
+          />
+          <h1 class="weather__location-title">Location</h1>
+        </div>
+
+        <div class="weather__today">
+          <h2 class="weather__today-text">--, -- -- --:--</h2>
+        </div>
+
+        <div class="weather__tem">
+          <div class="weather__tem-block">
+            <h1 class="tem_number">--°</h1>
+            <div class="weather__img-wrapper">
+              <img src="./img/weather.png" alt="Погода" class="weather__img" />
+              <p class="weather__conditions">loading..</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather__statics">
+          <div class="weather__statics-block">
+            <div class="statics__item">
+              <img
+                src="./img/mini_logo/Vector1.png"
+                alt="Зонт"
+                class="statics-img"
+              />
+              <p class="statics__text Precipitation">--%</p>
+              <p class="statics__text">Precipitation</p>
+            </div>
+            <div class="statics__item">
+              <img
+                src="./img/mini_logo/Vector3.png"
+                alt="Зонт"
+                class="statics-img"
+              />
+              <p class="statics__text Humidity">--%</p>
+              <p class="statics__text">Humidity</p>
+            </div>
+            <div class="statics__item">
+              <img
+                src="./img/mini_logo/Vector2.png"
+                alt="Зонт"
+                class="statics-img"
+              />
+              <p class="statics__text Wind">-- m/s</p>
+              <p class="statics__text">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather_day">
+          <div class="weather__day-title">
+            <p class="day-text">Today</p>
+            <p class="day-text">7-day Foreecasts ></p>
+          </div>
+
+          <div class="day__item-wrapper">
+            <div class="day__item">
+              <div class="day__item-block">
+                <span class="day-time">--:--</span>
+                <img
+                  src="./img/mini_logo/sun.png"
+                  alt="Солнце"
+                  class="day-img"
+                />
+                <span class="day-tem">22°</span>
+              </div>
+            </div>
+
+            <div class="day__item">
+              <div class="day__item-block">
+                <span class="day-time">--:--</span>
+                <img
+                  src="./img/mini_logo/sun.png"
+                  alt="Солнце"
+                  class="day-img"
+                />
+                <span class="day-tem">23°</span>
+              </div>
+            </div>
+
+            <div class="day__item">
+              <div class="day__item-block">
+                <span class="day-time">--:--</span>
+                <img
+                  src="./img/mini_logo/sun.png"
+                  alt="Солнце"
+                  class="day-img"
+                />
+                <span class="day-tem">18°</span>
+              </div>
+            </div>
+
+            <div class="day__item">
+              <div class="day__item-block">
+                <span class="day-time">--:--</span>
+                <img
+                  src="./img/mini_logo/sun.png"
+                  alt="Солнце"
+                  class="day-img"
+                />
+                <span class="day-tem">20°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="name__author">
+          <img src="./img/cloud.png" alt="облако" class="cloud" />
+          <h1 class="title__author">Ерофеев Вячеслав</h1>
+        </div>
+      </div>
+      <!-- <h1 class="title small">Сверстано из макета Figma</h1> -->
+    </section>
+  </body>
+
+  <script>
+    const video = document.getElementById("cloud-video");
+    video.playbackRate = 1; 
+  </script>
+</html>
